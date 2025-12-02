@@ -34,6 +34,9 @@ ALLOWED_HOSTS = [
     "127.0.0.1",
 ]
 
+AUTH_USER_MODEL = "accounts.User"
+
+
 
 
 # Application definition
@@ -162,6 +165,8 @@ SIMPLE_JWT = {
     "ACCESS_TOKEN_LIFETIME": timedelta(minutes=60),
     "REFRESH_TOKEN_LIFETIME": timedelta(days=30),
     "AUTH_HEADER_TYPES": ("Bearer",),
+    "BLACKLIST_AFTER_ROTATION": True,
+
 }
 
 MEDIA_URL = '/media/'

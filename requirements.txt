@@ -7,4 +7,4 @@ drf-spectacular
 gunicorn
 dj-database-url
 drf-yasg
-
+Pillow
